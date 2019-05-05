@@ -1,0 +1,42 @@
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.container{
+  height: 100%;
+  max-width: 114rem;
+  margin: 0 auto;
+}
+a:visited,
+a:active,
+a:link{
+  color: currentColor;
+}
+body{
+  background: $lightest-grey-color;
+}
+input[type='text']{
+  border: none;
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  background: transparent;
+  outline: none;
+}
+input[type='text'],
+input[type='text']::placeholder {
+  color: $white-color;
+}
+.primary-color{
+  color: $primary-color !important;
+}
+.white-color{
+  color: $white-color !important;
+}

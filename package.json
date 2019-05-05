@@ -1,0 +1,17 @@
+{
+  "name": "shopmate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --out-dir docs",
+    "build": "parcel build src/index.html --out-dir docs --public-url ./",
+    "deploy": "npm run build && git add . && git commit -a -m 'Completed the Home page' && git push origin master"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.20.1"
+  }
+}

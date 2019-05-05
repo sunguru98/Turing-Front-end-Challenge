@@ -1,0 +1,14 @@
+[
+  {
+    "shipping_id": 4,
+    "shipping_type": "By air (7 days, $25)",
+    "shipping_cost": "25.00",
+    "shipping_region_id": 3
+  },
+  {
+    "shipping_id": 5,
+    "shipping_type": "By sea (28 days, $10)",
+    "shipping_cost": "10.00",
+    "shipping_region_id": 3
+  }
+]
