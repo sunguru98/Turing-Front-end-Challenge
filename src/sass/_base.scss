@@ -40,3 +40,38 @@ input[type='text']::placeholder {
 .white-color{
   color: $white-color !important;
 }
+.shadowed{
+  box-shadow: 0 1px 1px rgba(#000, .2) 
+}
+.padding-25{
+  padding: 2.5rem;
+}
+.margin-top-25{
+  margin-top: 2.5rem;
+}
+.white-bg{
+  background: $white-color !important;
+}
+.staryellow {
+  path{
+    fill: $star-color;
+  }
+}
+.rounded{
+  border-radius: 50%;
+}
+
+.product__cart-btn {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: Montserrat, sans-serif;
+  border: none;
+  text-align: center;
+  padding: 1.3rem 1.8rem;
+  border-radius: 100px;
+  color: $white-color;
+  background: $primary-color;
+}
+
