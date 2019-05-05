@@ -3,6 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+textarea{
+  resize: none;
+}
+select {
+  margin: 1rem 0 1.5rem 0;
+  background: transparent;
+  color: $primary-color;
+  cursor: pointer;
+  border: 2px solid $primary-color;
+  outline: none;
+  width: 8.4rem;
+  height: 3.6rem;
+  border-radius: 100px;
+  font-family: Montserrat,
+    sans-serif;
+  font-size: 1.6rem;
+}
+hr{
+  margin-top: 4rem;
+  border: 1px solid #e8e8e8;
+}
 a{
   text-decoration: none;
 }
@@ -20,6 +41,7 @@ a:link{
   color: currentColor;
 }
 body{
+  overflow-x: hidden;
   background: $lightest-grey-color;
 }
 input[type='text']{
@@ -46,8 +68,8 @@ input[type='text']::placeholder {
 .padding-25{
   padding: 2.5rem;
 }
-.margin-top-25{
-  margin-top: 2.5rem;
+.margin-25{
+  margin: 2.5rem auto;
 }
 .white-bg{
   background: $white-color !important;
@@ -65,8 +87,6 @@ input[type='text']::placeholder {
   margin-bottom: 1rem;
   cursor: pointer;
   outline: none;
-  font-size: 1.2rem;
-  font-family: Montserrat, sans-serif;
   border: none;
   text-align: center;
   padding: 1.3rem 1.8rem;

@@ -70,22 +70,7 @@
       .product__decisions{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        select{
-          margin: 1rem 0 1.5rem 0;
-          background: transparent;
-          color: $primary-color;
-          cursor: pointer;
-          border: 2px solid $primary-color;
-          outline: none;
-          width: 8.4rem;
-          height: 3.6rem;
-          border-radius: 100px;
-          font-family: Montserrat,
-          sans-serif;
-          font-size: 1.6rem;
-        }
-        
+        align-items: center;      
       }
     }
   }

@@ -19,7 +19,8 @@ h3 {
 
 h2,
 h3,
-.topbar {
+.topbar,
+label {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -49,10 +50,38 @@ h3 {
   color: #2E2E2E;
 }
 
+.product__cart-btn {
+  font-size: 1.2rem;
+  font-family: Montserrat, sans-serif;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+select {
+  margin: 1rem 0 1.5rem 0;
+  background: transparent;
+  color: #f62f5e;
+  cursor: pointer;
+  border: 2px solid #f62f5e;
+  outline: none;
+  width: 8.4rem;
+  height: 3.6rem;
+  border-radius: 100px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem;
+}
+
+hr {
+  margin-top: 4rem;
+  border: 1px solid #e8e8e8;
 }
 
 a {
@@ -76,6 +105,7 @@ a:link {
 }
 
 body {
+  overflow-x: hidden;
   background: #f7f7f7;
 }
 
@@ -109,8 +139,8 @@ input[type=text]::placeholder {
   padding: 2.5rem;
 }
 
-.margin-top-25 {
-  margin-top: 2.5rem;
+.margin-25 {
+  margin: 2.5rem auto;
 }
 
 .white-bg {
@@ -129,8 +159,6 @@ input[type=text]::placeholder {
   margin-bottom: 1rem;
   cursor: pointer;
   outline: none;
-  font-size: 1.2rem;
-  font-family: Montserrat, sans-serif;
   border: none;
   text-align: center;
   padding: 1.3rem 1.8rem;
@@ -329,19 +357,6 @@ input[type=text]::placeholder {
   flex-direction: column;
   align-items: center;
 }
-.products-area__product .hovered-view .product__decisions select {
-  margin: 1rem 0 1.5rem 0;
-  background: transparent;
-  color: #f62f5e;
-  cursor: pointer;
-  border: 2px solid #f62f5e;
-  outline: none;
-  width: 8.4rem;
-  height: 3.6rem;
-  border-radius: 100px;
-  font-family: Montserrat, sans-serif;
-  font-size: 1.6rem;
-}
 .products-area__product:hover {
   box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.2);
 }
@@ -481,6 +496,7 @@ input[type=text]::placeholder {
   align-items: center;
 }
 .product__specs-container--quantity .product__buttons button {
+  cursor: pointer;
   background: #efefef;
   display: flex;
   align-items: center;
@@ -500,6 +516,24 @@ input[type=text]::placeholder {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   width: 22.5rem !important;
+}
+
+.reviews-container {
+  background: #fafafa;
+  padding: 4rem 8rem;
+}
+.reviews-container .product__reviews-list {
+  margin-top: 4.5rem;
+}
+.reviews-container .product__reviews-list .product__review {
+  display: flex;
+  margin: 2rem 0;
+}
+.reviews-container .product__reviews-list .product__review .review__left {
+  flex-basis: 30%;
+}
+.reviews-container .product__reviews-list .product__review .review__right {
+  flex: 1;
 }
 
 .product-container {

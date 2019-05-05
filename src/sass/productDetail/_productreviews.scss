@@ -1,0 +1,18 @@
+.reviews-container{
+  background: #fafafa;
+  padding: 4rem 8rem;
+  .product__reviews-list{
+    margin-top: 4.5rem;
+    .product__review {
+      display: flex;
+      margin: 2rem 0;
+      .review__left {
+        flex-basis: 30%;
+      }
+      .review__right {
+        flex: 1;
+      }
+    }
+  }
+  
+}
