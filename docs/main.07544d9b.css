@@ -744,6 +744,93 @@ button:hover, a:hover, input[type=submit]:hover {
   background: #EFEFEF;
 }
 
+.confirmation-container {
+  padding: 0rem 8rem;
+  display: flex;
+  margin-bottom: 6.5rem;
+}
+.confirmation-container__ordersummary {
+  flex-basis: 70%;
+  margin-right: 5rem;
+}
+.confirmation-container__ordersummary--subheadings {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 34rem 1fr 1fr;
+}
+.confirmation-container__ordersummary--subheadings h3 {
+  color: #b4b4b4;
+}
+.confirmation-container__ordersummary--subheadings h3:nth-of-type(1),
+.confirmation-container__ordersummary--subheadings h3:nth-of-type(2) {
+  margin-left: 3rem;
+}
+.confirmation-container__ordersummary--subheadings h3:not(:first-child) {
+  text-align: center;
+}
+.confirmation-container__ordersummary--productslist {
+  margin-top: 1rem;
+}
+.confirmation-container__ordersummary--product:nth-of-type(odd) {
+  background: #f7f7f7;
+}
+.confirmation-container__ordersummary--product {
+  padding: 2rem 0;
+  padding-left: 2rem;
+  display: grid;
+  grid-template-columns: 34rem 1fr 1fr;
+  align-items: center;
+}
+.confirmation-container__ordersummary--product .ordersummary-product__quantity,
+.confirmation-container__ordersummary--product .ordersummary-product__price {
+  text-align: center;
+}
+.confirmation-container__deliveryaddress {
+  flex: 1;
+}
+.confirmation-container__deliveryaddress--subtitle {
+  margin-top: 2.5rem;
+  color: #b4b4b4;
+}
+.confirmation-container__deliveryaddress p {
+  margin-top: 2.5rem;
+  line-height: 1.7;
+}
+
+hr {
+  width: 98rem;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 3.3rem;
+}
+
+.total-container {
+  padding: 0rem 8rem;
+  display: flex;
+  margin-bottom: 3.5rem;
+}
+.total-container__couponshipping {
+  flex-basis: 70%;
+  display: flex;
+  margin-right: 5rem;
+  justify-content: flex-end;
+}
+.total-container__couponshipping .subtotal__title,
+.total-container__couponshipping .shipping__title {
+  color: #b4b4b4;
+  margin-bottom: 5px;
+}
+.total-container__couponshipping .shipping {
+  margin-left: 6rem;
+}
+.total-container__grandtotal {
+  flex: 1;
+}
+.total-container__grandtotal .grandtotal__title {
+  color: #b4b4b4;
+  margin-bottom: 5px;
+}
+
 .checkout-container {
   background: #fff;
 }
@@ -768,7 +855,7 @@ button:hover, a:hover, input[type=submit]:hover {
   width: 94rem;
   background: #fff;
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

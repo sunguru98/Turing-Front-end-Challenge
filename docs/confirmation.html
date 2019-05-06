@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Shopmate - Confirmation</title>
   <link rel="stylesheet" href="/main.07544d9b.css">
-</head>
+<script src="/payment.js"></script></head>
 
 <body>
   <header class="nav-bars">
@@ -16,7 +16,7 @@
         <h3 class="general__navbar-greeting">Hi! <a href="#" class="primary-color">Sign in</a> or <a href="#" class="primary-color">Register</a></h3>
         <div class="general__navbar-sales">
           <ul>
-            <li><a href="">Daily Deals</a></li>
+            <li><a href="/payment.html">Daily Deals</a></li>
             <li><a href="">Sell</a></li>
             <li><a href="">Help & Contact</a></li>
           </ul>
@@ -52,6 +52,104 @@
       </div>
     </nav>
   </header>
+  <div class="checkout-container container shadowed margin-top-25 margin-bottom-5">
+    <div class="delivery-info-container">
+      <h2 class="delivery-info-container--title">Checkout</h2>
+      <div class="checkout__progress">
+        <div class="lines">
+          <div class="line1 progressed"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <div class="circles">
+          <div class="circle progressed"></div>
+          <div class="circle progressed"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+        <div class="titles">
+          <h3 class="title1 primary-color">Delivery</h3>
+          <h3 class="title2 primary-color">Confirmation</h3>
+          <h3 class="title3">Payment</h3>
+          <h3 class="title4">Finish</h3>
+        </div>
+      </div>
+    </div>
+    <div class="confirmation-container">
+      <div class="confirmation-container__ordersummary">
+        <h3 class="confirmation-container__ordersummary--title">Order Summary</h3>
+        <div class="confirmation-container__ordersummary--subheadings">
+          <h3>Item</h3>
+          <h3>Quantity</h3>
+          <h3>Price</h3>
+        </div>
+        <ul class="confirmation-container__ordersummary--productslist">
+          <li class="confirmation-container__ordersummary--product">
+            <span class="ordersummary-product__name">Green T-shirt 2016 Men BK3569</span>
+            <span class="ordersummary-product__quantity">2</span>
+            <h3 class="ordersummary-product__price primary-color">$16.99</h3>
+          </li>
+          <li class="confirmation-container__ordersummary--product">
+            <span class="ordersummary-product__name">Green T-shirt 2016 Men BK3569</span>
+            <span class="ordersummary-product__quantity">2</span>
+            <h3 class="ordersummary-product__price primary-color">$16.99</h3>
+          </li>
+          <li class="confirmation-container__ordersummary--product">
+            <span class="ordersummary-product__name">Green T-shirt 2016 Men BK3569</span>
+            <span class="ordersummary-product__quantity">2</span>
+            <h3 class="ordersummary-product__price primary-color">$16.99</h3>
+          </li>
+          <li class="confirmation-container__ordersummary--product">
+            <span class="ordersummary-product__name">Green T-shirt 2016 Men BK3569</span>
+            <span class="ordersummary-product__quantity">2</span>
+            <h3 class="ordersummary-product__price primary-color">$16.99</h3>
+          </li>
+          <li class="confirmation-container__ordersummary--product">
+            <span class="ordersummary-product__name">Green T-shirt 2016 Men BK3569</span>
+            <span class="ordersummary-product__quantity">2</span>
+            <h3 class="ordersummary-product__price primary-color">$16.99</h3>
+          </li>
+        </ul>
+      </div>
+      <div class="confirmation-container__deliveryaddress">
+        <h3 class="confirmation-container__deliveryaddress--title">Delivery</h3>
+        <h3 class="confirmation-container__deliveryaddress--subtitle">Address</h3>
+        <p class="confirmation-container__deliveryaddress--address">
+          Office 64, 8 Colmore Row, Birmingham, England, 42000
+        </p>
+        <h3 class="confirmation-container__deliveryaddress--subtitle">Delivery options</h3>
+        <p class="confirmation-container__deliveryaddress--deliveryoption">
+          Standard delivery
+          (free, 2-3 days)
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="total-container">
+      <div class="total-container__couponshipping">
+        <div class="subtotal">
+          <h3 class="subtotal__title">Subtotal</h3>
+          <h3 class="subtotal__price">$368</h3>
+        </div>
+        <div class="shipping">
+          <h3 class="shipping__title">Shipping</h3>
+          <h3 class="shipping__price">Free</h3>
+        </div>
+      </div>
+      <div class="total-container__grandtotal">
+        <h3 class="grandtotal__title">Grandtotal</h3>
+        <h2 class="grandtotal__price primary-color">$368</h2>
+      </div>
+    </div>
+    <div class="delivery-buttons-container">
+      <form action="./delivery.html">
+        <input type="submit" class="product__cart-btn btnghost" value="Back">
+      </form>
+      <form action="payment.html">
+        <input type="submit" class="product__cart-btn second" value="Next Step">
+      </form>
+    </div>
+  </div>
   <script src="/src.e31bb0bc.js"></script>
 </body>
 
