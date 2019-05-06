@@ -2,7 +2,8 @@
   width: 94rem;
   background: $white-color;
   position: absolute;
-  z-index: 0;
+  // Switch z-index back to 2 for debugging
+  z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -81,6 +82,7 @@
   }
   &-buttonscontainer{
     width: 80rem;
+    color: $white-color;
     margin: 0 auto;
     padding: 1.5rem 0;
     display: flex;

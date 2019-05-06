@@ -27,7 +27,7 @@ h2,
 h3,
 .topbar,
 label {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-weight: 700;
 }
 
@@ -197,8 +197,8 @@ input[type=text]::placeholder {
 }
 
 .btnghost {
-  background: #fff;
-  color: #f62f5e;
+  background: #fff !important;
+  color: #f62f5e !important;
 }
 
 .product__buttons {
@@ -641,11 +641,134 @@ button:hover, a:hover, input[type=submit]:hover {
   justify-content: center;
 }
 
+.checkout__progress {
+  margin: 3.2rem 0;
+}
+.checkout__progress .line1,
+.checkout__progress .line2,
+.checkout__progress .line3 {
+  height: 0.6rem;
+  flex: 1;
+  background: #EEEEEE;
+  position: relative;
+}
+.checkout__progress .line1 {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.checkout__progress .line3 {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+.checkout__progress .lines,
+.checkout__progress .circles,
+.checkout__progress .titles {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout__progress .titles {
+  margin-top: 2.5rem;
+}
+.checkout__progress .title2 {
+  margin-left: -2rem;
+}
+.checkout__progress .circle {
+  box-sizing: content-box;
+  margin-top: -1.6rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #EEEEEE;
+  border: 0.4rem solid #fff;
+  border-radius: 50%;
+  z-index: 2;
+}
+.checkout__progress .progressed {
+  background: #f62f5e;
+}
+
+.delivery-info-container {
+  padding: 4rem 8rem;
+}
+.delivery-info-container h2:nth-of-type(2) {
+  margin-top: 3.5rem;
+}
+.delivery-info-container--personalform, .delivery-info-container--deliveryform {
+  display: flex;
+}
+.delivery-info-container--personalform div {
+  flex: 1;
+}
+.delivery-info-container--personalform label, .delivery-info-container--personalform input {
+  display: block;
+}
+.delivery-info-container--personalform label {
+  color: #6c6c6c;
+}
+.delivery-info-container--personalform input {
+  border: 1px solid #e1e1e1;
+  width: 100%;
+  height: 5rem;
+  transition: border 0.4s;
+  border-radius: 0.6rem;
+  color: #2E2E2E;
+  padding: 0 1rem;
+}
+.delivery-info-container--personalform input:not(:last-child) {
+  margin-bottom: 1.3rem;
+}
+.delivery-info-container--personalform input:focus {
+  border-color: red;
+}
+.delivery-info-container--personalform .form__left-side {
+  margin-right: 1.7rem;
+}
+.delivery-info-container--deliveryform {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.delivery-info-container--deliveryform .deliveryoption {
+  display: flex;
+  align-items: center;
+}
+.delivery-info-container--deliveryform .deliveryoption input[type=radio] {
+  margin-right: 1.5rem;
+  background: #f62f5e;
+}
+.delivery-info-container--deliveryform .deliveryoption label:hover {
+  cursor: pointer;
+}
+
+.delivery-buttons-container {
+  padding: 2.5rem 8rem;
+  background: #EFEFEF;
+}
+
+.checkout-container {
+  background: #fff;
+}
+.checkout-container .delivery-info-container {
+  padding: 4rem 8rem;
+}
+.checkout-container .delivery-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+}
+.checkout-container .delivery-buttons-container .product__cart-btn {
+  font-size: 1.6rem;
+  margin: 0;
+  border-radius: 2.4rem;
+}
+.checkout-container .delivery-buttons-container .second {
+  margin-left: 2.5rem;
+}
+
 .shopping__cart {
   width: 94rem;
   background: #fff;
   position: absolute;
-  z-index: 0;
+  z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -730,6 +853,7 @@ button:hover, a:hover, input[type=submit]:hover {
 }
 .shopping__cart-buttonscontainer {
   width: 80rem;
+  color: #fff;
   margin: 0 auto;
   padding: 1.5rem 0;
   display: flex;

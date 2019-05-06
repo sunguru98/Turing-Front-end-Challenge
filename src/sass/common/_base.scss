@@ -100,8 +100,8 @@ input[type='text']::placeholder {
   background: $primary-color;
 }
 .btnghost{
-  background: $white-color;
-  color: $primary-color;
+  background: $white-color !important;
+  color: $primary-color !important;
 }
 .product__buttons {
   display: flex;

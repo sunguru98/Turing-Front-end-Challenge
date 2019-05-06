@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shopmate - Confirmation</title>
+  <link rel="stylesheet" href="./sass/main.scss">
+</head>
+
+<body>
+  <header class="nav-bars">
+    <nav class="general__navbar topbar">
+      <div class="container">
+        <h3 class="general__navbar-greeting">Hi! <a href="#" class="primary-color">Sign in</a> or <a href="#"
+            class="primary-color">Register</a></h3>
+        <div class="general__navbar-sales">
+          <ul>
+            <li><a href="">Daily Deals</a></li>
+            <li><a href="">Sell</a></li>
+            <li><a href="">Help & Contact</a></li>
+          </ul>
+        </div>
+        <div class="general__navbar-cart">
+          <div class="general__navbar-cart--notifications">
+            <a href="" style="display: flex"><img src="./img/cart.svg" alt="Cart image" class="cart__image"></a>
+            <span class="cart__badge">6</span>
+          </div>
+          <h3 class="general__navbar-cart--amount">Your bag: $45.32</h3>
+        </div>
+      </div>
+    </nav>
+    <nav class="categories__navbar topbar">
+      <div class="container">
+        <a href="#" style="display: flex"><img src="./img/logo.svg" alt="" class="categories__navbar-logo"></a>
+        <ul class="categories__navbar-categories white-color">
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Brands</a></li>
+        </ul>
+        <form action="#" class="categories__navbar-search">
+          <a href="#" style="display: flex"><img src="./img/search.svg" alt="Search Icon" class="search"></a>
+          <input type="text" placeholder="search anything">
+          <a href="#" class="close"><img src="./img/close.svg" alt="Close icon"></a>
+        </form>
+        <div class="categories__navbar-cart--notifications">
+          <a href="" style="display: flex"><img src="./img/cartwhite.svg" alt="Cart image" class="cart__image"></a>
+          <span class="cart__badge">6</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="checkout-container container shadowed margin-top-25 margin-bottom-5">
+    <div class="delivery-info-container">
+      <h2 class="delivery-info-container--title">Checkout</h2>
+      <div class="checkout__progress">
+        <div class="lines">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <div class="circles">
+          <div class="circle progressed"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+        <div class="titles">
+          <h3 class="title1 primary-color">Delivery</h3>
+          <h3 class="title2">Confirmation</h3>
+          <h3 class="title3">Payment</h3>
+          <h3 class="title4">Finish</h3>
+        </div>
+      </div>
+    </div>
+    <div class="delivery-buttons-container">
+      <form action="index.html">
+        <input type="submit" class="product__cart-btn btnghost" value="Back" />
+      </form>
+      <form action="confirmation.html">
+        <input type="submit" class="product__cart-btn second" value="Next Step" />
+      </form>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
