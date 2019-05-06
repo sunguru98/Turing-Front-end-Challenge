@@ -32,6 +32,7 @@ ul{
   list-style: none;
 }
 .container{
+  position: relative;
   height: 100%;
   max-width: 114rem;
   margin: 0 auto;
@@ -97,6 +98,31 @@ input[type='text']::placeholder {
   border-radius: 100px;
   color: $white-color;
   background: $primary-color;
+}
+.btnghost{
+  background: $white-color;
+  color: $primary-color;
+}
+.product__buttons {
+  display: flex;
+  align-items: center;
+
+  & button {
+    cursor: pointer;
+    background: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  .product__quantity-number {
+    border-radius: 100px;
+    border: 1px solid #E1E1E1;
+    padding: 0rem 2rem;
+    margin: 0 1rem;
+  }
 }
 
 input[type='submit']{

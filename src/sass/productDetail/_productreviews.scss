@@ -47,6 +47,7 @@
       }
       select{
         border: 1px solid $border-color;
+        background: $white-color;
         color: $black-color;
       }
       &--review-text{

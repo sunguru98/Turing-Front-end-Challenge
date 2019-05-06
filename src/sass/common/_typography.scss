@@ -10,7 +10,11 @@ body {
   color: $light-grey-color;
   line-height: 240%;
 }
-
+span, p{
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+}
 h1,
 h2,
 h3 {
@@ -70,4 +74,9 @@ input[type='submit']{
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+}
+
+.shopping__cart-details--removebtn{
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
 }
