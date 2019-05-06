@@ -78,6 +78,11 @@ input[type=submit] {
   font-family: "Open Sans", sans-serif;
 }
 
+.cvv__info {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -711,7 +716,7 @@ button:hover, a:hover, input[type=submit]:hover {
   transition: border 0.4s;
   border-radius: 0.6rem;
   color: #2E2E2E;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 .delivery-info-container--personalform input:not(:last-child) {
   margin-bottom: 1.3rem;
@@ -829,6 +834,72 @@ hr {
 .total-container__grandtotal .grandtotal__title {
   color: #b4b4b4;
   margin-bottom: 5px;
+}
+
+.payment-choices-container {
+  padding: 0rem 8rem;
+  margin-bottom: 5.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.payment-choices-container--visa, .payment-choices-container--paypal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F9F9F9;
+  border: 1px solid #d8d8d8;
+  border-radius: 2px;
+  transition: all 0.4s;
+  padding: 2.5rem 0 1.5rem 0;
+}
+.payment-choices-container--visa:hover, .payment-choices-container--paypal:hover,
+.payment-choices-container .selected__method {
+  cursor: pointer;
+  background: #FFF2F5;
+  border-color: #f62f5e;
+}
+.payment-choices-container--visa {
+  margin-right: 2rem;
+}
+.payment-choices-container--visa .card__images {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.payment-choices-container--visa .card__images--visa {
+  margin-right: 2rem;
+}
+.payment-choices-container .paypal__image {
+  margin-bottom: 1rem;
+}
+.payment-choices-container label {
+  margin-left: 1rem;
+  font-family: "Open Sans", sans-serif !important;
+  color: #2E2E2E;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.delivery-info-container--personalform {
+  margin-bottom: 8rem;
+  padding: 0rem 8rem;
+}
+.delivery-info-container--personalform label {
+  color: #b4b4b4;
+}
+.delivery-info-container--personalform input[type=text]::placeholder {
+  color: #b4b4b4;
+}
+.delivery-info-container--personalform .form__subdivision {
+  display: flex;
+}
+.delivery-info-container--personalform .form__subdivision--valid {
+  margin-right: 2rem;
+}
+.delivery-info-container--personalform .cvv__info {
+  margin-top: 5rem;
 }
 
 .checkout-container {
