@@ -1,6 +1,7 @@
-@import 'colors';
-@import 'typography';
-@import 'base';
-@import 'header';
-@import 'allproducts';
-@import 'productdetail';
+@import './common/colors';
+@import './common/typography';
+@import './common/base';
+@import './common/header';
+@import './shoppingCart/cartdetails';
+@import 'pageallproducts';
+@import 'pageproductdetail';

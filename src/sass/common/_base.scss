@@ -5,6 +5,7 @@
 }
 textarea{
   resize: none;
+  width: 80%;
 }
 select {
   margin: 1rem 0 1.5rem 0;
@@ -68,8 +69,11 @@ input[type='text']::placeholder {
 .padding-25{
   padding: 2.5rem;
 }
-.margin-25{
-  margin: 2.5rem auto;
+.margin-top-25{
+  margin-top: 2.5rem;
+}
+.margin-bottom-5{
+  margin-bottom: 5rem;
 }
 .white-bg{
   background: $white-color !important;
@@ -93,5 +97,17 @@ input[type='text']::placeholder {
   border-radius: 100px;
   color: $white-color;
   background: $primary-color;
+}
+
+input[type='submit']{
+  border: none;
+  background: $primary-color;
+  color: $white-color;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+}
+
+button:hover, a:hover, input[type='submit']:hover{
+  cursor: pointer;
 }
 
