@@ -83,6 +83,12 @@ input[type=submit] {
   line-height: 1.8;
 }
 
+.success-container__gohomebutton {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -900,6 +906,28 @@ hr {
 }
 .delivery-info-container--personalform .cvv__info {
   margin-top: 5rem;
+}
+
+.success-container {
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.success-container__successtitle {
+  margin: 4rem 0 2.5rem 0;
+}
+.success-container__successmessage {
+  margin-bottom: 4.3rem;
+}
+.success-container__gohomebutton {
+  padding: 1rem 0;
+  width: 22rem;
+  margin: 0 auto;
+  border-radius: 100px;
+  color: #fff !important;
+  background: #f62f5e;
 }
 
 .checkout-container {
