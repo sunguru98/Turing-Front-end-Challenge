@@ -3,6 +3,12 @@ html {
   font-size: 62.5%;
 }
 
+a {
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
@@ -14,6 +20,10 @@ span, p {
   font-weight: 700;
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
+}
+
+input[type=submit] {
+  font-size: 1.6rem !important;
 }
 
 h1,
@@ -309,6 +319,9 @@ button:hover, a:hover, input[type=submit]:hover {
   padding: 0 1.3rem;
   display: flex;
   align-items: center;
+}
+.categories__navbar-search input {
+  padding: 8px 0;
 }
 .categories__navbar-search .search {
   margin-right: 1rem;
@@ -950,11 +963,79 @@ hr {
   margin-left: 2.5rem;
 }
 
+.authentication-container {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.authentication-container .signin-container,
+.authentication-container .signup-container {
+  min-height: 55rem;
+  background: #fff;
+  flex: 1;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+  padding: 4rem 4.3rem;
+  text-align: center;
+}
+.authentication-container .signin-container--title,
+.authentication-container .signup-container--title {
+  margin-bottom: 4rem;
+}
+.authentication-container .signin-container--form input[type=email],
+.authentication-container .signin-container--form input[type=password],
+.authentication-container .signup-container--form input[type=email],
+.authentication-container .signup-container--form input[type=password] {
+  transition: border 0.4s;
+  border-radius: 0.6rem;
+  display: block;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #e1e1e1;
+  font-size: 1.6rem;
+  align-self: flex-end;
+}
+.authentication-container .signin-container--form input[type=email],
+.authentication-container .signin-container--form input[type=password],
+.authentication-container .signup-container--form input[type=email],
+.authentication-container .signup-container--form input[type=password] {
+  margin-bottom: 1.2rem;
+}
+.authentication-container .signin-container--form input[type=email]:focus,
+.authentication-container .signin-container--form input[type=password]:focus,
+.authentication-container .signup-container--form input[type=email]:focus,
+.authentication-container .signup-container--form input[type=password]:focus {
+  border-color: #f62f5e;
+  outline: none;
+}
+.authentication-container .signin-container--form input[type=submit], .authentication-container .signin-container--form a,
+.authentication-container .signup-container--form input[type=submit],
+.authentication-container .signup-container--form a {
+  display: block;
+  width: 22.1rem;
+  margin: 2.4rem auto;
+  padding: 2rem 0;
+}
+.authentication-container .signin-container--form a,
+.authentication-container .signup-container--form a {
+  background: #0652DD;
+  color: #fff;
+  border-radius: 100px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  box-sizing: content-box;
+}
+.authentication-container .signin-container {
+  margin-right: 2rem;
+}
+
 .shopping__cart {
   width: 94rem;
   background: #fff;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
